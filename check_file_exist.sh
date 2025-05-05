@@ -13,6 +13,9 @@ fi
 # Vérifie si le fichier existe dans le répertoire courant
 if [ -f "$filename" ]; then
   echo "Le fichier '$filename' existe."  # Affiche un message si le fichier existe
+# Vérifie si le nom donné correspond à un répertoire
+elif [ -d "$filename" ]; then
+  echo "Le nom '$filename' est un répertoire, pas un fichier."
 else
   echo "Le fichier '$filename' n'existe pas."  # Affiche un message si le fichier n'existe pas
 fi

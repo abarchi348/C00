@@ -1,3 +1,3 @@
 #!/bin/bash
-# Ce script liste tous les fichiers du répertoire courant
-ls 
+# Ce script affiche la liste de tous les fichiers du répertoire courant
+ls -p | grep -v /
